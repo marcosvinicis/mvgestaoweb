@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Imagens originais (mantemos apenas .webp)
+public/assets/img/*.png
+public/assets/img/*.jpeg
+public/assets/img/*.jpg
+
+# Rascunhos
+drafts/
+
+# Docs internos
+_docs/
+
+# Python server
+__pycache__/
