@@ -433,6 +433,26 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
+/* Secundário (outline) */
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 1.5px solid var(--color-accent);
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-accent-light);
+    border-color: var(--color-accent-hover);
+    color: var(--color-accent-hover);
+}
+
+/* CTA rodapé de seção */
+.section-footer-cta {
+    text-align: center;
+    margin-top: var(--space-10);
+}
+
 .btn-whatsapp svg,
 .btn-whatsapp img {
     width: 22px;
