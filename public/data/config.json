@@ -1,0 +1,33 @@
+{
+  "site": {
+    "name": "MV Gestão Web",
+    "url": "https://mvgestaoweb.com.br",
+    "description": "Marketing Digital em Maringá para Empresas que Querem Clientes Reais. Estruturas digitais integradas: sites, SEO local, tráfego pago e automações.",
+    "keywords": "marketing digital maringá, agência de marketing maringá, SEO maringá, tráfego pago maringá, sites estratégicos maringá",
+    "language": "pt-BR"
+  },
+  "contact": {
+    "phone": "+5544997769301",
+    "phoneFormatted": "(44) 99776-9301",
+    "whatsapp": "https://wa.me/5544997769301",
+    "email": ""
+  },
+  "address": {
+    "street": "Av. Duque de Caxias, 882",
+    "neighborhood": "Centro",
+    "city": "Maringá",
+    "state": "PR",
+    "zip": "87020-025",
+    "country": "BR"
+  },
+  "hours": {
+    "weekdays": "08:00–18:00",
+    "saturday": "Fechado",
+    "sunday": "Fechado"
+  },
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "linkedin": ""
+  }
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /data/
+Disallow: /assets/js/
+
+Sitemap: https://mvgestaoweb.com.br/sitemap.xml
