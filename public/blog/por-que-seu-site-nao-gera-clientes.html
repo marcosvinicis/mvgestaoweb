@@ -4,10 +4,10 @@
 <head>
     <!-- Clarity tracking code for https://mvgestaoweb.com.br/ -->
     <script>
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "vkx7p0p2o0");
     </script>
     <meta charset="UTF-8" />
@@ -31,7 +31,8 @@
         </div>
     </header>
     <main id="main-content">
-        <section class="article-hero" style="background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&h=700&fit=crop&q=80');">
+        <section class="article-hero"
+            style="background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&h=700&fit=crop&q=80');">
             <div class="container">
                 <nav class="article-breadcrumb"><a href="/">Home</a><span>›</span><a
                         href="/blog/">Blog</a><span>›</span><span>Site que não gera clientes</span></nav>
@@ -44,59 +45,209 @@
         <section class="article-body">
             <div class="container">
                 <article class="article-content">
+
+                    <nav class="article-toc" aria-label="Índice do artigo">
+                        <p><strong>Neste artigo:</strong></p>
+                        <ol>
+                            <li><a href="#o-problema">O problema real: visita sem conversão</a></li>
+                            <li><a href="#velocidade">1. Velocidade de carregamento ruim</a></li>
+                            <li><a href="#cta">2. CTA ausente acima da dobra</a></li>
+                            <li><a href="#copy">3. Copy genérica</a></li>
+                            <li><a href="#mobile">4. Site não adaptado para mobile</a></li>
+                            <li><a href="#prova-social">5. Falta de prova social</a></li>
+                            <li><a href="#seo">6. Invisível no Google</a></li>
+                            <li><a href="#oferta">7. Oferta confusa ou inexistente</a></li>
+                            <li><a href="#diagnostico">Como diagnosticar o seu site</a></li>
+                            <li><a href="#faq">Perguntas frequentes</a></li>
+                        </ol>
+                    </nav>
+
+                    <h2 id="o-problema">O problema real: visita sem conversão</h2>
                     <p>Se você tem um site mas ele não gera ligações, mensagens ou clientes, o problema quase nunca é a
-                        falta de visitas. É o que acontece depois que o visitante chega. Um <strong>site
+                        falta de visitas. É o que acontece <em>depois</em> que o visitante chega. Um <strong>site
                             estratégico</strong> é projetado para converter — não apenas para existir. E a maioria dos
-                        sites de pequenas empresas em Maringá falha em pelo menos três dos cinco pontos abaixo.</p>
+                        sites de pequenas e médias empresas em Maringá falha em pelo menos três dos sete pontos abaixo.
+                    </p>
+                    <p>A boa notícia: todos são corrigíveis. E a maioria não exige reconstruir o site do zero.</p>
 
-                    <h2>1. Velocidade de carregamento ruim</h2>
-                    <p>O Google penaliza sites lentos no rankeamento orgânico, e o usuário abandona uma página que
-                        demora mais de 3 segundos para carregar. Sites feitos em plataformas pesadas, cheios de plugins
-                        ou com imagens não otimizadas são os maiores vilões. A solução é um código limpo, imagens em
-                        formato WebP e hospedagem adequada.</p>
+                    <h2 id="velocidade">1. Velocidade de carregamento ruim</h2>
+                    <p>O Google penaliza sites lentos no ranqueamento orgânico, e o usuário abandona uma página que
+                        demora mais de 3 segundos para carregar. Segundo dados do Google, para cada segundo a mais no
+                        tempo de carregamento, a taxa de rejeição aumenta em média 32%.</p>
 
-                    <h2>2. Ausência de CTA claro acima da dobra</h2>
-                    <p>A "dobra" é o que o visitante vê sem precisar rolar a página. Se ele chega ao seu site e não
-                        encontra imediatamente uma razão clara para entrar em contato — e um botão que facilite isso —,
-                        ele sai. Cada segundo de dúvida é uma perda de conversão.</p>
+                    <h3>Principais causas de lentidão</h3>
+                    <ul>
+                        <li><strong>Imagens não otimizadas:</strong> fotos em alta resolução sem compressão são a causa
+                            número 1</li>
+                        <li><strong>Hospedagem inadequada:</strong> servidores compartilhados baratos geram lentidão
+                            consistente</li>
+                        <li><strong>Plugins em excesso:</strong> sites em WordPress com dezenas de plugins carregam
+                            código desnecessário</li>
+                        <li><strong>JavaScript pesado:</strong> scripts de terceiros que bloqueiam o carregamento
+                            inicial</li>
+                    </ul>
 
-                    <h2>3. Copy genérica que não fala com ninguém</h2>
-                    <p>"Qualidade, confiança e compromisso" não convencem ninguém. O copy do seu site precisa responder
-                        à pergunta que o visitante tem na cabeça: "Como esse negócio resolve o meu problema específico?"
-                        Sem isso, o site é um cartão de visitas digital que ninguém lê.</p>
+                    <h3>Como verificar a velocidade do seu site</h3>
+                    <p>Use o <strong>Google PageSpeed Insights</strong> (pagespeed.web.dev) — gratuito e direto. Insira
+                        a URL do seu site e veja a nota. Abaixo de 50 no mobile é crítico. Acima de 80 é excelente. Para
+                        sites de negócios locais, a nota no mobile é mais importante do que no desktop.</p>
 
-                    <h2>4. Site não adaptado para mobile</h2>
-                    <p>Mais de 70% dos acessos a sites de negócios locais vêm de celulares. Se o seu site não é
-                        mobile-first — com texto legível, botões acessíveis e layout que se adapta à tela —, você está
-                        perdendo a maioria dos seus potenciais clientes.</p>
+                    <h2 id="cta">2. Ausência de CTA claro acima da dobra</h2>
+                    <p>A "dobra" é o que o visitante vê sem precisar rolar a página. É o espaço mais valioso do site — e
+                        onde a maioria das homepages desperdiça a oportunidade de converter.</p>
 
-                    <h2>5. Falta de prova social visível</h2>
-                    <p>Depoimentos, avaliações, resultados e casos reais reduzem a desconfiança do visitante e aumentam
-                        a conversão. Um site sem nenhuma prova social é um site que pede que o visitante confie às cegas
-                        — e a maioria não confia.</p>
+                    <h3>O que precisa estar acima da dobra</h3>
+                    <ul>
+                        <li><strong>Headline clara:</strong> em até 8 palavras, o que você faz e para quem</li>
+                        <li><strong>Subheadline:</strong> o principal benefício ou diferencial em até 2 linhas</li>
+                        <li><strong>CTA visível:</strong> botão de WhatsApp, ligação ou formulário sem precisar rolar
+                        </li>
+                        <li><strong>Prova de credibilidade básica:</strong> número de clientes, anos de mercado ou
+                            logotipos</li>
+                    </ul>
+                    <p>Se o visitante chega ao seu site e precisa rolar para encontrar um jeito de entrar em contato,
+                        você já perdeu parte da conversão.</p>
 
-                    <h2>Como um site estratégico resolve esses problemas?</h2>
-                    <p>Um site estratégico é projetado com foco em conversão desde o início. Estrutura correta, copy
-                        persuasivo, velocidade otimizada, mobile-first, prova social integrada e CTAs estratégicos em
-                        cada seção. Na MV Gestão Web, cada site é construído seguindo o <strong>Método Estrutura
-                            Digital™</strong> — um processo que garante que cada elemento trabalhe para gerar clientes
-                        reais.</p>
+                    <h3>Exemplos de CTAs que convertem</h3>
+                    <ul>
+                        <li>"Agendar consulta gratuita" — específico e sem risco</li>
+                        <li>"Falar agora no WhatsApp" — direto e de baixo atrito</li>
+                        <li>"Solicitar orçamento em minutos" — elimina a incerteza do processo</li>
+                    </ul>
+                    <p>Evite CTAs genéricos como "Saiba mais" ou "Entre em contato" sem contexto — não comunicam ação
+                        nem benefício.</p>
+
+                    <h2 id="copy">3. Copy genérica que não fala com ninguém</h2>
+                    <p>"Qualidade, confiança e compromisso" não convence ninguém. Esse tipo de copy existe na homepage
+                        de praticamente todo concorrente — e por isso não diferencia nem converte.</p>
+
+                    <h3>O que o copy do seu site precisa responder</h3>
+                    <p>Quando o visitante chega ao seu site, ele tem perguntas implícitas:</p>
+                    <ul>
+                        <li>"Esse negócio resolve o meu problema específico?"</li>
+                        <li>"Por que devo escolher esse e não o concorrente?"</li>
+                        <li>"Esse lugar é confiável?"</li>
+                        <li>"O que acontece depois que eu entrar em contato?"</li>
+                    </ul>
+                    <p>Um site estratégico responde a todas essas perguntas antes que o visitante precise perguntar.</p>
+
+                    <h3>Como melhorar o copy sem reescrever tudo</h3>
+                    <ul>
+                        <li>Substitua "qualidade e compromisso" por dados reais: "Mais de 300 clientes atendidos em
+                            Maringá"</li>
+                        <li>Troque frases sobre o negócio por frases sobre o problema do cliente</li>
+                        <li>Adicione o nome da cidade e do bairro que você atende — aumenta relevância local e reduz
+                            objeções</li>
+                    </ul>
+
+                    <h2 id="mobile">4. Site não adaptado para mobile</h2>
+                    <p>Mais de 70% dos acessos a sites de negócios locais vêm de celulares — especialmente para
+                        pesquisas com intenção imediata como "dentista perto de mim" ou "pizzaria Maringá". Se o seu
+                        site não é <strong>mobile-first</strong>, você está perdendo a maioria dos potenciais clientes
+                        antes mesmo que eles leiam a primeira frase.</p>
+
+                    <h3>Os erros mais comuns no mobile</h3>
+                    <ul>
+                        <li>Textos pequenos demais — o usuário precisa dar zoom para ler</li>
+                        <li>Botões muito próximos — difíceis de clicar com o polegar</li>
+                        <li>Formulários com muitos campos — no celular, digitar é cansativo</li>
+                        <li>Pop-ups que cobrem toda a tela — são punidos pelo Google e irritam o usuário</li>
+                        <li>Imagens que quebram o layout em telas estreitas</li>
+                    </ul>
+
+                    <h2 id="prova-social">5. Falta de prova social visível</h2>
+                    <p>Prova social é qualquer evidência de que outras pessoas já confiaram no seu negócio e tiveram
+                        resultados — e é o elemento de persuasão mais poderoso em sites de negócios locais.</p>
+
+                    <h3>Tipos de prova social que convertem</h3>
+                    <ul>
+                        <li><strong>Depoimentos reais</strong> — com nome, foto e contexto do resultado</li>
+                        <li><strong>Avaliações do Google</strong> — widget ou screenshot das avaliações do perfil</li>
+                        <li><strong>Número de clientes ou casos</strong> — "Mais de 500 procedimentos realizados" cria
+                            credibilidade imediata</li>
+                        <li><strong>Casos antes e depois</strong> — para estética, odontologia, marketing e serviços com
+                            resultado visual</li>
+                        <li><strong>Logos de clientes ou parceiros</strong> — se atende empresas conhecidas na cidade,
+                            mostre</li>
+                    </ul>
+
+                    <h2 id="seo">6. Invisível no Google (sem SEO)</h2>
+                    <p>Um site bonito que ninguém encontra não gera clientes. Se o seu site não aparece nas primeiras
+                        páginas do Google para as palavras-chave do seu negócio em Maringá, o tráfego orgânico —
+                        gratuito e consistente — simplesmente não chega.</p>
+
+                    <h3>Sinais básicos de problemas de SEO</h3>
+                    <ul>
+                        <li>O título da página não inclui a cidade ou o serviço principal</li>
+                        <li>Não há meta description configurada (ou é genérica demais)</li>
+                        <li>O site não cita o nome da cidade em nenhum texto</li>
+                        <li>Não há blog ou conteúdo novo publicado regularmente</li>
+                        <li>O Google Search Console nunca foi configurado para monitorar o desempenho</li>
+                    </ul>
+
+                    <h2 id="oferta">7. Oferta confusa ou inexistente</h2>
+                    <p>O visitante chega ao site procurando uma solução para um problema específico. Se o site apresenta
+                        8 serviços diferentes com a mesma ênfase — sem destacar o que é mais relevante ou diferencia o
+                        negócio —, o visitante sai sem tomar nenhuma decisão.</p>
+
+                    <h3>Como estruturar uma oferta clara</h3>
+                    <ul>
+                        <li>Destaque um <strong>serviço âncora</strong> — o mais procurado ou o mais lucrativo — como
+                            oferta principal</li>
+                        <li>Use uma proposta de valor específica: não "serviços odontológicos completos", mas "implante
+                            dentário em Maringá com parcelamento em até 24x"</li>
+                        <li>Inclua a próxima ação de forma clara: "Agende sua avaliação gratuita"</li>
+                    </ul>
+
+                    <h2 id="diagnostico">Como diagnosticar o seu site agora</h2>
+                    <p>Antes de contratar qualquer serviço, faça esse diagnóstico rápido:</p>
+                    <ol>
+                        <li><strong>Velocidade:</strong> PageSpeed Insights — meta é acima de 70 no mobile</li>
+                        <li><strong>CTA:</strong> abra a homepage e anote o tempo até encontrar um botão de contato —
+                            deve ser imediato</li>
+                        <li><strong>Mobile:</strong> teste no celular — se precisar de zoom para ler, há problema</li>
+                        <li><strong>Copy:</strong> leia a headline principal — ela fala de você ou do problema do
+                            cliente?</li>
+                        <li><strong>Prova social:</strong> há pelo menos 3 depoimentos visíveis sem rolar?</li>
+                        <li><strong>SEO:</strong> pesquise "seu serviço + Maringá" no Google — seu site aparece na
+                            primeira página?</li>
+                        <li><strong>Oferta:</strong> a próxima ação está clara? O visitante sabe o que fazer agora?</li>
+                    </ol>
+                    <p>Se 3 ou mais itens falham, o site está ativamente afastando clientes — independente de quanto
+                        tráfego ele recebe.</p>
+
+                    <h2 id="faq">Perguntas frequentes</h2>
+
+                    <h3>Preciso refazer o site inteiro ou posso corrigir o que existe?</h3>
+                    <p>Na maioria dos casos, é possível corrigir o que existe. Velocidade, copy, CTA e prova social são
+                        ajustes que não exigem reconstruir o site. Se o problema é estrutural — plataforma lenta ou
+                        layout quebrado no mobile — a reconstrução faz mais sentido.</p>
+
+                    <h3>Vale mais investir em tráfego pago ou corrigir o site primeiro?</h3>
+                    <p>Corrija o site primeiro. Tráfego pago com site ruim amplifica o desperdício — você paga para
+                        trazer pessoas para uma página que não converte. Com o site ajustado, cada real investido em
+                        anúncios gera muito mais retorno.</p>
+
+                    <h3>Como saber se o site está gerando clientes ou não?</h3>
+                    <p>Configure o Google Analytics 4 e defina eventos de conversão — cliques no WhatsApp, envio de
+                        formulário, ligações. Com esses dados, você sabe exatamente quantas pessoas chegam ao site e
+                        quantas tomam ação. Sem esse dado, você está gerenciando no escuro.</p>
 
                     <div class="article-cta-box">
                         <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-3);">O seu site precisa de uma
                             revisão estratégica?</h2>
-                        <p>Converse com a MV Gestão Web e descubra o que está impedindo o seu site de gerar clientes.
-                        </p>
+                        <p>A MV Gestão Web identifica o que está impedindo o seu site de gerar clientes e apresenta um
+                            plano de correção direto.</p>
                         <a href="https://wa.me/5544997769301?text=Olá!%20Quero%20entender%20por%20que%20o%20meu%20site%20não%20gera%20clientes."
                             class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
                     </div>
                     <div class="article-related">
                         <h3>Artigos relacionados</h3>
                         <ul>
-                            <li><a href="/blog/diferenca-site-landing-page.html">→ Diferença entre site e landing page —
-                                    qual o seu negócio precisa?</a></li>
-                            <li><a href="/blog/marketing-digital-maringa.html">→ O que é marketing digital para negócios
-                                    locais em Maringá</a></li>
+                            <li><a href="/blog/diferenca-site-landing-page.html">→ Diferença entre site e landing
+                                    page</a></li>
+                            <li><a href="/blog/marketing-digital-maringa.html">→ Marketing digital para negócios locais
+                                    em Maringá</a></li>
                         </ul>
                     </div>
                 </article>

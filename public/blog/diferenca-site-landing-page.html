@@ -4,10 +4,10 @@
 <head>
     <!-- Clarity tracking code for https://mvgestaoweb.com.br/ -->
     <script>
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "vkx7p0p2o0");
     </script>
     <meta charset="UTF-8" />
@@ -31,7 +31,8 @@
         </div>
     </header>
     <main id="main-content">
-        <section class="article-hero" style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?w=1600&h=700&fit=crop&q=80');">
+        <section class="article-hero"
+            style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?w=1600&h=700&fit=crop&q=80');">
             <div class="container">
                 <nav class="article-breadcrumb"><a href="/">Home</a><span>›</span><a
                         href="/blog/">Blog</a><span>›</span><span>Site vs Landing Page</span></nav>
@@ -44,49 +45,249 @@
         <section class="article-body">
             <div class="container">
                 <article class="article-content">
-                    <p>Dois dos termos mais confundidos no mundo do marketing digital são <strong>site
-                            institucional</strong> e <strong>landing page</strong>. Embora ambos existam na internet,
-                        eles têm finalidades completamente diferentes — e usar o errado pode comprometer seriamente os
-                        resultados do seu tráfego pago.</p>
 
-                    <h2>O que é um site institucional?</h2>
-                    <p>O site institucional é a presença digital completa da sua empresa. Ele tem múltiplas páginas
-                        (home, sobre, serviços, blog, contato) e tem como objetivo construir credibilidade, apresentar a
-                        empresa de forma abrangente e ranquear no Google organicamente via SEO. É o destino de quem
-                        pesquisa o nome da empresa ou chega por indicação.</p>
+                    <nav class="article-toc" aria-label="Índice do artigo">
+                        <p><strong>Neste artigo:</strong></p>
+                        <ol>
+                            <li><a href="#a-confusao">A confusão que custa caro</a></li>
+                            <li><a href="#site">O que é um site institucional?</a></li>
+                            <li><a href="#landing-page">O que é uma landing page?</a></li>
+                            <li><a href="#diferenca-estrutural">Diferença estrutural: como cada um é construído</a></li>
+                            <li><a href="#quando-usar">Quando usar cada um?</a></li>
+                            <li><a href="#trafego-pago">Por que usar landing page no tráfego pago?</a></li>
+                            <li><a href="#elementos">Elementos de uma landing page de alta conversão</a></li>
+                            <li><a href="#custo">Quanto custa cada um?</a></li>
+                            <li><a href="#os-dois">Preciso dos dois?</a></li>
+                            <li><a href="#faq">Perguntas frequentes</a></li>
+                        </ol>
+                    </nav>
 
-                    <h2>O que é uma landing page?</h2>
-                    <p>Uma landing page (página de aterrissagem) é uma página única, com foco em uma ação específica —
-                        geralmente coletar um lead (nome + WhatsApp/e-mail) ou gerar uma venda direta. Ela não tem menu
-                        de navegação, links externos ou distrações. Tudo na página existe para conduzir o visitante a
-                        executar a ação desejada.</p>
+                    <h2 id="a-confusao">A confusão que custa caro</h2>
+                    <p>Dois dos termos mais confundidos no marketing digital são <strong>site institucional</strong> e
+                        <strong>landing page</strong>. Embora ambos existam na internet e possam parecer semelhantes
+                        para quem os vê de fora, eles têm objetivos, estruturas e métricas completamente diferentes.</p>
+                    <p>Usar o errado no momento errado é um dos erros mais comuns — e mais caros — no tráfego pago. Um
+                        anúncio bem feito direcionado para a página errada pode reduzir a taxa de conversão em até 80%.
+                    </p>
 
-                    <h2>Quando usar cada um?</h2>
+                    <h2 id="site">O que é um site institucional?</h2>
+                    <p>O site institucional é a presença digital completa e permanente do seu negócio. Ele é construído
+                        para cumprir múltiplas funções ao mesmo tempo:</p>
+                    <ul>
+                        <li><strong>Credibilidade:</strong> apresenta a empresa, a história, a equipe e os diferenciais
+                        </li>
+                        <li><strong>SEO:</strong> ranqueia organicamente no Google para palavras-chave do negócio ao
+                            longo do tempo</li>
+                        <li><strong>Informação:</strong> explora todos os serviços, produtos, casos e conteúdos
+                            relevantes</li>
+                        <li><strong>Referência:</strong> é o destino de quem pesquisa o nome da empresa ou chega por
+                            indicação</li>
+                    </ul>
+
+                    <h3>Características do site institucional</h3>
+                    <ul>
+                        <li>Múltiplas páginas (home, sobre, serviços, portfólio, blog, contato)</li>
+                        <li>Menu de navegação completo</li>
+                        <li>Links internos e externos</li>
+                        <li>Blog com artigos para ranqueamento orgânico</li>
+                        <li>Conteúdo rico e diverso sobre o negócio</li>
+                    </ul>
+                    <p>O site não é otimizado para uma única ação — e esse é exatamente o ponto. Ele serve ao cliente
+                        que quer conhecer o negócio antes de decidir.</p>
+
+                    <h2 id="landing-page">O que é uma landing page?</h2>
+                    <p>Uma landing page (página de aterrissagem) é uma página única, construída em torno de uma única
+                        oferta e uma única ação desejada. Não tem menu de navegação. Não tem links externos. Não tem
+                        distrações.</p>
+                    <p>Toda a estrutura visual e textual da landing page existe para conduzir o visitante a executar
+                        exatamente uma ação: preencher um formulário, clicar no WhatsApp, ligar, comprar ou agendar uma
+                        consulta.</p>
+
+                    <h3>Características de uma landing page</h3>
+                    <ul>
+                        <li>Página única, sem navegação lateral</li>
+                        <li>Foco em uma única oferta</li>
+                        <li>Um único CTA (Call to Action) repetido em diferentes pontos</li>
+                        <li>Carregamento ultra-rápido, especialmente no mobile</li>
+                        <li>Prova social (avaliações, depoimentos, números)</li>
+                        <li>Formulário ou botão de contato acima da dobra</li>
+                    </ul>
+
+                    <h2 id="diferenca-estrutural">Diferença estrutural: como cada um é construído</h2>
+                    <table
+                        style="width:100%; border-collapse: collapse; margin: var(--space-6) 0; font-size: var(--text-sm);">
+                        <thead>
+                            <tr style="background: var(--color-surface-2);">
+                                <th
+                                    style="padding: var(--space-3); text-align: left; border-bottom: 2px solid var(--color-border);">
+                                    Elemento</th>
+                                <th
+                                    style="padding: var(--space-3); text-align: left; border-bottom: 2px solid var(--color-border);">
+                                    Site Institucional</th>
+                                <th
+                                    style="padding: var(--space-3); text-align: left; border-bottom: 2px solid var(--color-border);">
+                                    Landing Page</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Páginas</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Múltiplas</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Uma
+                                    única</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Menu
+                                    de navegação</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Sim
+                                </td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Não
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">CTAs
+                                </td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Múltiplos e variados</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Um
+                                    único, repetido</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Objetivo principal</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Informar e construir credibilidade</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Converter em uma ação específica</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">SEO
+                                    orgânico</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Fundamental</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+                                    Secundário</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Ideal
+                                    para tráfego pago</td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Não
+                                </td>
+                                <td style="padding: var(--space-3); border-bottom: 1px solid var(--color-border);">Sim
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="quando-usar">Quando usar cada um?</h2>
+
                     <h3>Use o site institucional quando:</h3>
                     <ul>
-                        <li>O objetivo é aparecer no Google organicamente (SEO)</li>
-                        <li>Você quer construir autoridade e credibilidade de marca</li>
-                        <li>O seu negócio tem múltiplos serviços ou produtos</li>
-                        <li>O cliente precisa conhecer a empresa antes de decidir</li>
+                        <li>O objetivo é ranquear no Google organicamente (SEO de longo prazo)</li>
+                        <li>O cliente precisa conhecer a empresa em profundidade antes de decidir</li>
+                        <li>Você tem múltiplos serviços ou produtos que precisam de páginas próprias</li>
+                        <li>Você quer receber visitas de indicações, buscas pelo nome da marca ou pesquisas gerais</li>
                     </ul>
+
                     <h3>Use a landing page quando:</h3>
                     <ul>
-                        <li>Você está rodando tráfego pago (Meta Ads ou Google Ads)</li>
-                        <li>Tem uma oferta específica — promoção, serviço único, evento</li>
-                        <li>O objetivo é coletar leads ou gerar vendas diretas</li>
-                        <li>Você quer medir com precisão a conversão de um anúncio</li>
+                        <li>Você está rodando tráfego pago (Meta Ads, Google Ads, e-mail marketing)</li>
+                        <li>Você tem uma oferta específica — promoção, serviço singular, evento ou lançamento</li>
+                        <li>O objetivo é coletar leads ou gerar vendas diretas com precisão</li>
+                        <li>Você quer medir com exatidão a conversão de um anúncio específico</li>
                     </ul>
 
-                    <h2>Por que usar site no lugar de landing page no tráfego pago é um erro?</h2>
-                    <p>Quando você investe em anúncios e direciona o tráfego para o seu site institucional, o visitante
-                        chega e tem dezenas de opções — menu, blog, página sobre, redes sociais. Isso dispersa a atenção
-                        e reduz drasticamente a conversão. Uma landing page de alta conversão pode multiplicar o
-                        resultado do mesmo investimento em anúncios.</p>
+                    <h2 id="trafego-pago">Por que usar landing page no tráfego pago?</h2>
+                    <p>Esse é o ponto que mais causa prejuízo. Muitos anunciantes criam bons anúncios e direcionam o
+                        clique para a homepage do site institucional. O resultado é previsível: o visitante chega e tem
+                        dezenas de opções — menu, blog, página sobre, redes sociais. Isso dispersa a atenção e reduz
+                        drasticamente a conversão.</p>
 
-                    <h2>Preciso dos dois?</h2>
-                    <p>Na maioria dos casos, sim. O site institucional trabalha o SEO e a credibilidade. A landing page
-                        trabalha a conversão direta do tráfego pago. Na MV Gestão Web, construímos as duas estruturas de
-                        forma integrada e complementar.</p>
+                    <h3>O princípio da correspondência de mensagem</h3>
+                    <p>Quando alguém clica em um anúncio de "avaliação ortodôntica gratuita", a página de destino
+                        precisa falar <em>exatamente</em> sobre avaliação ortodôntica gratuita — não sobre todos os
+                        serviços da clínica. Essa correspondência entre o anúncio e a landing page é um dos fatores mais
+                        críticos para a taxa de conversão.</p>
+                    <p>Landing pages bem construídas para tráfego pago convertem entre <strong>3x e 8x mais</strong> do
+                        que homepages de sites institucionais para o mesmo investimento em anúncios.</p>
+
+                    <h2 id="elementos">Elementos de uma landing page de alta conversão</h2>
+                    <p>Cada elemento tem uma função específica no processo de convencimento:</p>
+
+                    <h3>Acima da dobra (o que o visitante vê sem rolar)</h3>
+                    <ul>
+                        <li><strong>Headline principal:</strong> comunica a proposta de valor em menos de 8 palavras
+                        </li>
+                        <li><strong>Subheadline:</strong> aprofunda o benefício principal ou remove a principais objeção
+                        </li>
+                        <li><strong>CTA visível:</strong> botão ou formulário na área inicial, sem precisar rolar</li>
+                        <li><strong>Imagem ou vídeo:</strong> reforça visualmente o contexto do serviço</li>
+                    </ul>
+
+                    <h3>Corpo da página</h3>
+                    <ul>
+                        <li><strong>Benefícios claros</strong> (não características) — o que o cliente ganha, não como
+                            funciona o serviço</li>
+                        <li><strong>Prova social:</strong> depoimentos reais, número de clientes, avaliações</li>
+                        <li><strong>Resposta às objeções:</strong> as dúvidas mais comuns respondidas no texto</li>
+                        <li><strong>Urgência ou escassez:</strong> quando houver elemento genuíno — prazo de promoção,
+                            vagas limitadas</li>
+                    </ul>
+
+                    <h3>Finalização</h3>
+                    <ul>
+                        <li><strong>CTA repetido</strong> — o mesmo botão ou formulário aparece no final</li>
+                        <li><strong>Garantia ou diferencial</strong> — algo que remove o risco da decisão</li>
+                        <li><strong>Informação de contato</strong> — para quem prefere ligar em vez de preencher
+                            formulário</li>
+                    </ul>
+
+                    <h2 id="custo">Quanto custa cada um?</h2>
+                    <p>Em Maringá, os valores variam bastante dependendo do profissional ou agência, mas os benchmarks
+                        gerais são:</p>
+                    <ul>
+                        <li><strong>Landing page simples:</strong> R$ 1.500 a R$ 4.000 (página estática, focada em
+                            conversão)</li>
+                        <li><strong>Landing page com CRM e automação:</strong> R$ 3.000 a R$ 8.000 (com integração de
+                            formulário, e-mail e rastreamento)</li>
+                        <li><strong>Site institucional básico:</strong> R$ 3.000 a R$ 8.000 (home + serviços + contato)
+                        </li>
+                        <li><strong>Site institucional completo com blog:</strong> R$ 6.000 a R$ 20.000 (depende do
+                            número de páginas e do nível de customização)</li>
+                    </ul>
+                    <p>O retorno sobre o investimento é o critério mais importante — não o preço. Uma landing page de R$
+                        3.000 que gera 20 leads por mês a R$ 30 cada vale muito mais do que um site de R$ 15.000 que não
+                        converte.</p>
+
+                    <h2 id="os-dois">Precisa dos dois?</h2>
+                    <p>Na maioria dos casos que trabalhamos em Maringá, sim. O site institucional constrói a
+                        credibilidade de longo prazo e trabalha o SEO orgânico. A landing page trabalha a conversão
+                        direta do tráfego pago. Um complementa o outro — e as duas estruturas juntas constroem uma
+                        presença digital completa e eficiente.</p>
+
+                    <h2 id="faq">Perguntas frequentes</h2>
+
+                    <h3>Posso usar o Instagram como landing page?</h3>
+                    <p>Tecnicamente sim — direcionar o clique do anúncio para o perfil do Instagram funciona em alguns
+                        setores. Mas o controle sobre a conversão é muito menor. Você não consegue rastrear quantas
+                        pessoas entraram em contato pelo anúncio especificamente.</p>
+
+                    <h3>Landing page precisa de domínio próprio?</h3>
+                    <p>Não necessariamente. Pode estar em um subdomínio (landing.suaempresa.com.br) ou mesmo em
+                        plataformas como RD Station, Leadpages ou WordPress. O importante é que seja rápida, responsiva
+                        e com rastreamento configurado.</p>
+
+                    <h3>Uma landing page pode aparecer no Google organicamente?</h3>
+                    <p>Sim, mas sua otimização para SEO é limitada pela ausência de conteúdo extenso. O foco de uma
+                        landing page é converter tráfego pago — para SEO orgânico, o site institucional e o blog são os
+                        instrumentos corretos.</p>
+
+                    <h3>Qual a taxa de conversão esperada de uma boa landing page?</h3>
+                    <p>Varia muito por segmento, mas uma landing page bem construída para negócios locais costuma
+                        converter entre 5% e 20% dos visitantes em leads. Abaixo de 3% é sinal de que algo precisa ser
+                        ajustado — headline, oferta, velocidade ou CTA.</p>
 
                     <div class="article-cta-box">
                         <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-3);">Precisa de um site
@@ -102,6 +303,7 @@
                                     clientes</a></li>
                             <li><a href="/blog/trafego-pago-meta-ads-google-ads.html">→ Meta Ads ou Google Ads — qual
                                     usar?</a></li>
+                            <li><a href="/blog/o-que-e-trafego-pago.html">→ O que é tráfego pago?</a></li>
                         </ul>
                     </div>
                 </article>
