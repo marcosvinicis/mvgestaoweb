@@ -2028,97 +2028,161 @@ section {
 /* ==========================================================================
    22. FORMULÁRIO DE CONTATO
    ========================================================================== */
-.contact-form-container {
-    max-width: 600px;
+.mv-contact-container {
+    max-width: 800px;
     margin: var(--space-12) auto 0;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-xl);
-    padding: var(--space-8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    padding: var(--space-10);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-.contact-form-text {
+.mv-contact-header {
     text-align: center;
-    margin-bottom: var(--space-6);
-    color: rgba(249, 250, 251, 0.85);
-    font-size: var(--text-base);
+    margin-bottom: var(--space-8);
 }
 
-.contact-form {
+.mv-contact-header h3 {
+    font-size: var(--text-2xl);
+    color: var(--color-contrast);
+    margin-bottom: var(--space-3);
+    font-weight: var(--font-bold);
+    letter-spacing: -0.02em;
+}
+
+.mv-contact-header p {
+    color: rgba(249, 250, 251, 0.7);
+    font-size: var(--text-base);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.mv-contact-form {
     display: flex;
     flex-direction: column;
     gap: var(--space-5);
 }
 
-.form-group {
+.mv-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+}
+
+.mv-form-group {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
     text-align: left;
 }
 
-.form-group label {
-    font-size: var(--text-sm);
-    font-weight: var(--font-medium);
-    color: var(--color-contrast);
+.mv-form-group.full-width {
+    grid-column: 1 / -1;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.mv-form-group label {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: rgba(249, 250, 251, 0.9);
+}
+
+.mv-form-group input,
+.mv-form-group select,
+.mv-form-group textarea {
     width: 100%;
-    padding: var(--space-3) var(--space-4);
-    background: rgba(10, 15, 30, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 14px 16px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
     color: var(--color-contrast);
     font-family: var(--font-sans);
     font-size: var(--text-base);
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    transition: all var(--transition-base);
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.mv-form-group input:focus,
+.mv-form-group select:focus,
+.mv-form-group textarea:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: rgba(249, 250, 251, 0.4);
+.mv-form-group input::placeholder,
+.mv-form-group textarea::placeholder {
+    color: rgba(249, 250, 251, 0.3);
 }
 
-.form-group select {
+.mv-form-group select {
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23F9FAFB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 16px;
+    cursor: pointer;
 }
 
-.form-group select option {
-    background: var(--color-primary-soft);
+.mv-form-group select option {
+    background: var(--color-surface);
     color: var(--color-contrast);
 }
 
-.form-submit-btn {
-    margin-top: var(--space-2);
+.mv-form-submit-btn {
+    margin-top: var(--space-4);
     width: 100%;
+    padding: 16px;
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.mv-form-submit-btn:hover {
+    background: var(--color-accent-light);
+    transform: translateY(-2px);
 }
 
 .form-success-msg {
     text-align: center;
     padding: var(--space-6);
-    background: rgba(37, 211, 102, 0.1);
-    border: 1px solid rgba(37, 211, 102, 0.3);
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
     border-radius: var(--radius-md);
-    color: var(--color-contrast);
+    color: #34d399;
     font-weight: var(--font-medium);
+    margin-top: var(--space-4);
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .mv-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mv-contact-container {
+        padding: var(--space-6);
+    }
 }
 
 /* ==========================================================================

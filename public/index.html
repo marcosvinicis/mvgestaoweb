@@ -925,79 +925,78 @@
                         </a>
                     </div>
 
-                    <div class="contact-form-container fade-up">
-                        <p class="contact-form-text">Prefere deixar suas informações e receber um retorno no horário que
-                            for melhor para você? Preencha o formulário abaixo.</p>
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-
+                    <div class="mv-contact-container fade-up">
+                        <div class="mv-contact-header">
+                            <h3>Fale com um Especialista</h3>
+                            <p>Preencha os dados abaixo e entraremos em contato o mais rápido possível.</p>
+                        </div>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="mv-contact-form">
                             <!-- Access Key Web3Forms -->
                             <input type="hidden" name="access_key" value="096d294a-1a9c-477c-a5e1-d7d9e2edb856">
-
-                            <!-- Assunto do e-mail recebido -->
                             <input type="hidden" name="subject" value="Novo lead — MV Gestão Web">
-
-                            <!-- Redirecionar após envio -->
                             <input type="hidden" name="redirect" value="false">
 
-                            <div class="form-group">
-                                <label for="nome">Nome ou Empresa *</label>
-                                <input type="text" id="nome" name="nome" required placeholder="Seu nome ou empresa">
-                            </div>
+                            <div class="mv-form-grid">
+                                <div class="mv-form-group">
+                                    <label for="nome">Nome ou Empresa *</label>
+                                    <input type="text" id="nome" name="nome" required
+                                        placeholder="Ex: João Silva ou Empresa XYZ">
+                                </div>
 
-                            <div class="form-group">
-                                <label for="whatsapp">WhatsApp *</label>
-                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(44) 99999-9999">
-                            </div>
+                                <div class="mv-form-group">
+                                    <label for="whatsapp">WhatsApp *</label>
+                                    <input type="tel" id="whatsapp" name="whatsapp" required
+                                        placeholder="(00) 00000-0000">
+                                </div>
 
-                            <div class="form-group">
-                                <label for="email">E-mail *</label>
-                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                            </div>
+                                <div class="mv-form-group">
+                                    <label for="email">E-mail *</label>
+                                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                                </div>
 
-                            <div class="form-group">
-                                <label for="cidade">Cidade / Estado *</label>
-                                <input type="text" id="cidade" name="cidade" required placeholder="Maringá, PR">
-                            </div>
+                                <div class="mv-form-group">
+                                    <label for="cidade">Cidade / Estado *</label>
+                                    <input type="text" id="cidade" name="cidade" required placeholder="Maringá, PR">
+                                </div>
 
-                            <div class="form-group">
-                                <label for="trafego">Você já investe em tráfego pago? *</label>
-                                <select id="trafego" name="trafego" required>
-                                    <option value="" disabled selected>Selecione...</option>
-                                    <option value="Não invisto">Não invisto</option>
-                                    <option value="Até R$1.500/mês">Até R$1.500/mês</option>
-                                    <option value="R$1.500 a R$5.000/mês">R$1.500 a R$5.000/mês</option>
-                                    <option value="Acima de R$5.000/mês">Acima de R$5.000/mês</option>
-                                </select>
-                            </div>
+                                <div class="mv-form-group">
+                                    <label for="trafego">Já investe em tráfego pago? *</label>
+                                    <select id="trafego" name="trafego" required>
+                                        <option value="" disabled selected>Selecione...</option>
+                                        <option value="Não invisto">Não invisto</option>
+                                        <option value="Até R$1.500/mês">Até R$1.500/mês</option>
+                                        <option value="R$1.500 a R$5.000/mês">R$1.500 a R$5.000/mês</option>
+                                        <option value="Acima de R$5.000/mês">Acima de R$5.000/mês</option>
+                                    </select>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="como">Como nos encontrou? *</label>
-                                <select id="como" name="como" required>
-                                    <option value="" disabled selected>Selecione...</option>
-                                    <option value="Google">Google</option>
-                                    <option value="Indicação">Indicação</option>
-                                    <option value="Instagram">Instagram</option>
-                                    <option value="Outro">Outro</option>
-                                </select>
-                            </div>
+                                <div class="mv-form-group">
+                                    <label for="como">Como nos encontrou? *</label>
+                                    <select id="como" name="como" required>
+                                        <option value="" disabled selected>Selecione...</option>
+                                        <option value="Google">Google</option>
+                                        <option value="Indicação">Indicação</option>
+                                        <option value="Instagram">Instagram</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="desafio">Qual o seu maior desafio no digital hoje? *</label>
-                                <textarea id="desafio" name="desafio" required rows="4"
-                                    placeholder="Descreva brevemente..."></textarea>
+                                <div class="mv-form-group full-width">
+                                    <label for="desafio">Qual o seu maior desafio no digital hoje? *</label>
+                                    <textarea id="desafio" name="desafio" required rows="4"
+                                        placeholder="Descreva brevemente..."></textarea>
+                                </div>
                             </div>
 
                             <!-- Honeypot anti-spam -->
                             <input type="checkbox" name="botcheck" style="display:none">
 
-                            <button type="submit" class="btn btn-primary btn-lg form-submit-btn">Enviar
-                                mensagem</button>
-
+                            <button type="submit" class="mv-form-submit-btn">Enviar mensagem</button>
                         </form>
 
-                        <!-- Mensagem de confirmação (oculta por padrão) -->
+                        <!-- Mensagem de confirmação -->
                         <div id="form-success" class="form-success-msg" style="display:none">
-                            ✅ Mensagem enviada! Retornaremos em breve.
+                            ✅ Mensagem enviada com sucesso! Retornaremos em breve.
                         </div>
                     </div>
                 </div>
