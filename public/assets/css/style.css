@@ -955,9 +955,22 @@ section {
 }
 
 .depoimento-card {
-    background: transparent;
-    padding: var(--space-8) 0;
+    background: rgba(255, 255, 255, 0.6);
+    /* Glassmorphism leve em fundo claro */
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
     position: relative;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+    /* Sombra difusa e elegante */
+    transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.depoimento-card:hover {
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
 }
 
 .depoimento-stars {
@@ -972,24 +985,27 @@ section {
 .depoimento-text {
     font-size: 1.125rem;
     color: #374151;
-    /* gray-700 para alto contraste no fundo claro */
+    /* gray-700 para alto contraste */
     line-height: 1.75;
     font-style: italic;
-    /* Geralmente depoimentos ficam melhores em itálico */
     position: relative;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+    /* Mais espaço para não acavalar com a aspa */
 }
 
 .depoimento-text::before {
     content: "“";
-    font-family: serif;
-    font-size: 3rem;
+    font-family: Georgia, serif;
+    /* Assegurando uma fonte classicamente arredondada para a aspa */
+    font-size: 3.5rem;
     position: absolute;
     left: -0.5rem;
-    top: -1rem;
-    color: rgba(37, 99, 235, 0.2);
-    /* Aspas grandes em azul super claro de fundo */
+    top: -0.5rem;
+    color: var(--color-accent);
+    /* Usando a cor primária (azul) para destacar a aspa forte */
+    opacity: 0.3;
     font-style: normal;
+    line-height: 1;
 }
 
 .depoimento-text::after {
