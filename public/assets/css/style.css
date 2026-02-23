@@ -2032,12 +2032,25 @@ section {
     max-width: 800px;
     margin: var(--space-12) auto 0;
     background: transparent;
-    padding: 0;
+    padding: var(--space-8) 0 0 0;
 }
 
 .mv-contact-header {
-    display: none;
-    /* A imagem de referência não mostra o título grande, foca apenas nos campos. Se quiser reativar, pode remover o display none. */
+    text-align: left;
+    margin-bottom: var(--space-8);
+}
+
+.mv-contact-header h3 {
+    font-size: var(--text-2xl);
+    color: var(--color-contrast);
+    margin-bottom: var(--space-3);
+    font-weight: var(--font-bold);
+    letter-spacing: -0.02em;
+}
+
+.mv-contact-header p {
+    color: rgba(249, 250, 251, 0.7);
+    font-size: var(--text-base);
 }
 
 .mv-contact-form {
