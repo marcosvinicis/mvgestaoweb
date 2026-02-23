@@ -944,7 +944,8 @@ section {
    12. SEÇÃO — PROVA SOCIAL
    ========================================================================== */
 .section-prova {
-    background: var(--color-surface);
+    background: #ffffff;
+    /* Fundo branco alinhado ao print */
 }
 
 .depoimentos-grid {
@@ -954,38 +955,52 @@ section {
 }
 
 .depoimento-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: var(--radius-xl);
-    padding: var(--space-8);
+    background: transparent;
+    padding: var(--space-8) 0;
     position: relative;
-    transition: box-shadow var(--transition-base), transform var(--transition-base);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
-.depoimento-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-4px);
 }
 
 .depoimento-stars {
-    color: var(--color-accent-light);
+    color: #f59e0b;
+    /* Dourado */
     font-size: 1.125rem;
-    letter-spacing: 2px;
-    margin-bottom: var(--space-4);
+    letter-spacing: 4px;
+    margin-bottom: var(--space-6);
+    line-height: 1;
 }
 
 .depoimento-text {
-    font-size: var(--text-base);
-    color: var(--color-contrast);
+    font-size: 1.125rem;
+    color: #374151;
+    /* gray-700 para alto contraste no fundo claro */
     line-height: 1.75;
+    font-style: italic;
+    /* Geralmente depoimentos ficam melhores em itálico */
+    position: relative;
+    padding-left: 1rem;
+}
+
+.depoimento-text::before {
+    content: "“";
+    font-family: serif;
+    font-size: 3rem;
+    position: absolute;
+    left: -0.5rem;
+    top: -1rem;
+    color: rgba(37, 99, 235, 0.2);
+    /* Aspas grandes em azul super claro de fundo */
+    font-style: normal;
+}
+
+.depoimento-text::after {
+    content: "”";
 }
 
 .depoimento-cliente {
     margin-top: var(--space-8);
-    padding-top: var(--space-6);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .depoimento-foto {
@@ -994,13 +1009,15 @@ section {
 
 .depoimento-autor {
     font-size: 15px;
-    font-weight: var(--font-semibold);
-    color: var(--color-contrast);
+    font-weight: var(--font-bold);
+    color: #111827;
+    /* gray-900 super nítido na assinatura */
 }
 
 .depoimento-cargo {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #6b7280;
+    /* gray-500 em contraste ameno no fundo branco */
     line-height: 1.4;
     margin-top: 2px;
 }
