@@ -983,21 +983,13 @@ section {
 }
 
 .depoimento-cliente {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
     margin-top: var(--space-8);
     padding-top: var(--space-6);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .depoimento-foto {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    border: 2px solid var(--color-accent);
+    display: none;
 }
 
 .depoimento-autor {
