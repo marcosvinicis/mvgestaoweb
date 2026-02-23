@@ -2031,33 +2031,13 @@ section {
 .mv-contact-container {
     max-width: 800px;
     margin: var(--space-12) auto 0;
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-xl);
-    padding: var(--space-10);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    background: transparent;
+    padding: 0;
 }
 
 .mv-contact-header {
-    text-align: center;
-    margin-bottom: var(--space-8);
-}
-
-.mv-contact-header h3 {
-    font-size: var(--text-2xl);
-    color: var(--color-contrast);
-    margin-bottom: var(--space-3);
-    font-weight: var(--font-bold);
-    letter-spacing: -0.02em;
-}
-
-.mv-contact-header p {
-    color: rgba(249, 250, 251, 0.7);
-    font-size: var(--text-base);
-    max-width: 500px;
-    margin: 0 auto;
+    display: none;
+    /* A imagem de referência não mostra o título grande, foca apenas nos campos. Se quiser reativar, pode remover o display none. */
 }
 
 .mv-contact-form {
@@ -2084,9 +2064,18 @@ section {
 }
 
 .mv-form-group label {
-    font-size: var(--text-sm);
+    font-size: 14px;
     font-weight: var(--font-medium);
-    color: rgba(249, 250, 251, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mv-form-group label .required-asterisk {
+    color: #ef4444;
+    /* red-500 */
+    font-weight: bold;
 }
 
 .mv-form-group input,
@@ -2094,22 +2083,24 @@ section {
 .mv-form-group textarea {
     width: 100%;
     padding: 14px 16px;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-md);
-    color: var(--color-contrast);
+    background: #111116;
+    /* Fundo quase preto como na imagem */
+    border: 1px solid #5b21b6;
+    /* Borda roxa escura */
+    border-radius: var(--radius-sm);
+    color: #f8fafc;
     font-family: var(--font-sans);
-    font-size: var(--text-base);
-    transition: all var(--transition-base);
+    font-size: 15px;
+    transition: all var(--transition-fast);
 }
 
 .mv-form-group input:focus,
 .mv-form-group select:focus,
 .mv-form-group textarea:focus {
     outline: none;
-    border-color: var(--color-accent);
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    border-color: #8b5cf6;
+    /* Borda roxa mais clara no focus */
+    background: #0f0f13;
 }
 
 .mv-form-group input::placeholder,
