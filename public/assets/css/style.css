@@ -2031,25 +2031,32 @@ section {
 .mv-contact-container {
     max-width: 800px;
     margin: var(--space-12) auto 0;
-    background: transparent;
-    padding: var(--space-8) 0 0 0;
+    background: rgba(15, 23, 42, 0.4);
+    /* Fundo leve para separar da seção anterior */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Borda sutil de encapsulamento */
+    border-radius: var(--radius-xl);
+    padding: var(--space-10) var(--space-8);
 }
 
 .mv-contact-header {
-    text-align: left;
+    text-align: center;
+    /* Centralizando para combinar com a imagem recarregada e destacar da esqueda dos inputs */
     margin-bottom: var(--space-8);
 }
 
 .mv-contact-header h3 {
     font-size: var(--text-2xl);
-    color: var(--color-contrast);
+    color: #ffffff;
+    /* Forçando cor branca sólida para contraste absoluto */
     margin-bottom: var(--space-3);
     font-weight: var(--font-bold);
     letter-spacing: -0.02em;
 }
 
 .mv-contact-header p {
-    color: rgba(249, 250, 251, 0.7);
+    color: rgba(255, 255, 255, 0.8);
+    /* Forçando leitura clara do subtítulo */
     font-size: var(--text-base);
 }
 
