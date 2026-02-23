@@ -947,48 +947,65 @@ section {
     background: var(--color-surface);
 }
 
-.depoimentos-grid {
+.testimonials-grid {
     display: grid;
-    gap: var(--space-6);
-    margin-top: var(--space-12);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
-.depoimento-card {
-    background: var(--color-surface-alt);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl);
-    padding: var(--space-8);
-    position: relative;
-    transition: box-shadow var(--transition-base);
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.depoimento-card:hover {
-    box-shadow: var(--shadow-md);
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.depoimento-card::before {
-    content: '\201C';
-    position: absolute;
-    top: var(--space-4);
-    left: var(--space-6);
-    font-size: 4rem;
-    line-height: 1;
-    color: var(--color-accent-light);
-    font-weight: var(--font-extrabold);
+.testimonial-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.depoimento-text {
-    font-size: var(--text-base);
-    color: var(--color-text-body);
-    line-height: 1.75;
-    margin-top: var(--space-8);
-    margin-bottom: var(--space-6);
+.testimonial-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 13px;
+    color: #6B7280;
 }
 
-.depoimento-autor {
-    font-size: var(--text-sm);
-    font-weight: var(--font-semibold);
-    color: var(--color-accent);
+.testimonial-info strong {
+    font-size: 15px;
+    color: #111827;
+}
+
+.testimonial-stars {
+    color: #F59E0B;
+    font-size: 16px;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .credenciais-grid {
@@ -1436,18 +1453,17 @@ section {
     flex-shrink: 0;
 }
 
-.mapa-embed {
+.map-container iframe {
     width: 100%;
-    overflow: hidden;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    box-shadow: var(--shadow-lg);
-    margin-top: var(--space-8);
+    height: 420px;
+    border: 0;
+    border-radius: 8px;
 }
 
-.mapa-embed iframe {
-    width: 100%;
-    display: block;
-    filter: grayscale(20%) contrast(1.05);
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 240px;
+    }
 }
 
 /* ==========================================================================
@@ -1904,9 +1920,6 @@ section {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .depoimentos-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .servicos-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1965,9 +1978,6 @@ section {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .depoimentos-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
     .credenciais-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -2011,7 +2021,103 @@ section {
 }
 
 /* ==========================================================================
-   21. PRINT
+   22. FORMULÁRIO DE CONTATO
+   ========================================================================== */
+.contact-form-container {
+    max-width: 600px;
+    margin: var(--space-12) auto 0;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.contact-form-text {
+    text-align: center;
+    margin-bottom: var(--space-6);
+    color: rgba(249, 250, 251, 0.85);
+    font-size: var(--text-base);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: left;
+}
+
+.form-group label {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-contrast);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background: rgba(10, 15, 30, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-md);
+    color: var(--color-contrast);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(249, 250, 251, 0.4);
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23F9FAFB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px;
+}
+
+.form-group select option {
+    background: var(--color-primary-soft);
+    color: var(--color-contrast);
+}
+
+.form-submit-btn {
+    margin-top: var(--space-2);
+    width: 100%;
+}
+
+.form-success-msg {
+    text-align: center;
+    padding: var(--space-6);
+    background: rgba(37, 211, 102, 0.1);
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--color-contrast);
+    font-weight: var(--font-medium);
+}
+
+/* ==========================================================================
+   23. PRINT
    ========================================================================== */
 @media print {
 

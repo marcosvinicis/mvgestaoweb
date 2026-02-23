@@ -4,10 +4,10 @@
 <head>
     <!-- Clarity tracking code for https://mvgestaoweb.com.br/ -->
     <script>
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "vkx7p0p2o0");
     </script>
     <meta charset="UTF-8" />
@@ -646,29 +646,54 @@
                         funciona.</p>
                 </div>
 
-                <ul class="depoimentos-grid" role="list">
-                    <li class="depoimento-card fade-up stagger-1">
-                        <p class="depoimento-text">
-                            "Antes do site novo, eu dependia 100% de indicação. Hoje recebo contatos pelo Google toda
-                            semana."
-                        </p>
-                        <p class="depoimento-autor">Empresário do setor de serviços — Maringá, PR</p>
-                    </li>
-                    <li class="depoimento-card fade-up stagger-2">
-                        <p class="depoimento-text">
-                            "Tentei gerenciar os anúncios sozinho por meses e só gastei dinheiro. Com a MV, o primeiro
-                            mês já pagou o investimento."
-                        </p>
-                        <p class="depoimento-autor">Profissional liberal, área da saúde — Maringá, PR</p>
-                    </li>
-                    <li class="depoimento-card fade-up stagger-3">
-                        <p class="depoimento-text">
-                            "Minha clínica apareceu no Google Maps depois de anos invisível. Agora somos os primeiros da
-                            região."
-                        </p>
-                        <p class="depoimento-autor">Clínica de estética — Maringá, PR</p>
-                    </li>
-                </ul>
+                <div class="testimonials-grid fade-up">
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="/assets/img/depoimento-1.jpg" alt="Cliente MV Gestão Web"
+                                class="testimonial-photo">
+                            <div class="testimonial-info">
+                                <strong>Carlos Henrique</strong>
+                                <span>Empresário — Setor de Serviços</span>
+                                <span>Maringá, PR</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Antes do site novo, eu dependia 100% de indicação. Hoje recebo contatos pelo Google toda
+                            semana."</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="/assets/img/depoimento-2.jpg" alt="Cliente MV Gestão Web"
+                                class="testimonial-photo">
+                            <div class="testimonial-info">
+                                <strong>Dra. Fernanda Lima</strong>
+                                <span>Médica — Área da Saúde</span>
+                                <span>Maringá, PR</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Tentei gerenciar os anúncios sozinho por meses e só gastei dinheiro. Com a MV, o primeiro
+                            mês já pagou o investimento."</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="/assets/img/depoimento-3.jpg" alt="Cliente MV Gestão Web"
+                                class="testimonial-photo">
+                            <div class="testimonial-info">
+                                <strong>Aline Souza</strong>
+                                <span>Proprietária — Clínica de Estética</span>
+                                <span>Maringá, PR</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Minha clínica apareceu no Google Maps depois de anos invisível. Agora somos os primeiros da
+                            região."</p>
+                    </div>
+
+                </div>
 
                 <ul class="credenciais-grid fade-up" role="list" aria-label="Credenciais MV Gestão Web">
                     <li class="credencial-item">
@@ -906,6 +931,82 @@
                             Falar com a MV Gestão Web no WhatsApp
                         </a>
                     </div>
+
+                    <div class="contact-form-container fade-up">
+                        <p class="contact-form-text">Prefere deixar suas informações e receber um retorno no horário que
+                            for melhor para você? Preencha o formulário abaixo.</p>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                            <!-- Access Key Web3Forms -->
+                            <input type="hidden" name="access_key" value="096d294a-1a9c-477c-a5e1-d7d9e2edb856">
+
+                            <!-- Assunto do e-mail recebido -->
+                            <input type="hidden" name="subject" value="Novo lead — MV Gestão Web">
+
+                            <!-- Redirecionar após envio -->
+                            <input type="hidden" name="redirect" value="false">
+
+                            <div class="form-group">
+                                <label for="nome">Nome ou Empresa *</label>
+                                <input type="text" id="nome" name="nome" required placeholder="Seu nome ou empresa">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp *</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(44) 99999-9999">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cidade">Cidade / Estado *</label>
+                                <input type="text" id="cidade" name="cidade" required placeholder="Maringá, PR">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="trafego">Você já investe em tráfego pago? *</label>
+                                <select id="trafego" name="trafego" required>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="Não invisto">Não invisto</option>
+                                    <option value="Até R$1.500/mês">Até R$1.500/mês</option>
+                                    <option value="R$1.500 a R$5.000/mês">R$1.500 a R$5.000/mês</option>
+                                    <option value="Acima de R$5.000/mês">Acima de R$5.000/mês</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="como">Como nos encontrou? *</label>
+                                <select id="como" name="como" required>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="Google">Google</option>
+                                    <option value="Indicação">Indicação</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="desafio">Qual o seu maior desafio no digital hoje? *</label>
+                                <textarea id="desafio" name="desafio" required rows="4"
+                                    placeholder="Descreva brevemente..."></textarea>
+                            </div>
+
+                            <!-- Honeypot anti-spam -->
+                            <input type="checkbox" name="botcheck" style="display:none">
+
+                            <button type="submit" class="btn btn-primary btn-lg form-submit-btn">Enviar
+                                mensagem</button>
+
+                        </form>
+
+                        <!-- Mensagem de confirmação (oculta por padrão) -->
+                        <div id="form-success" class="form-success-msg" style="display:none">
+                            ✅ Mensagem enviada! Retornaremos em breve.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -981,6 +1082,13 @@
                 <div class="mapa-header fade-up">
                     <span class="section-eyebrow">Onde estamos</span>
                     <h2>Maringá – PR</h2>
+                    <div class="map-container" style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.179507729692!2d-51.9419310889829!3d-23.4178818562488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd72a61de1863%3A0x57164856808b86e1!2sAv.%20Duque%20de%20Caxias%2C%20882%20-%20Zona%207%2C%20Maring%C3%A1%20-%20PR%2C%2087020-025!5e0!3m2!1spt-BR!2sbr!4v1771868586362!5m2!1spt-BR!2sbr"
+                            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Localização MV Gestão Web — Maringá, PR">
+                        </iframe>
+                    </div>
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -991,13 +1099,6 @@
                         Av. Duque de Caxias, 882 — Centro, Maringá – PR, 87020-025
                     </p>
                 </div>
-            </div>
-            <div class="mapa-embed fade-up">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.15!2d-51.9388!3d-23.4206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0c04b2d5555%3A0x0!2sAv.+Duque+de+Caxias%2C+882+-+Centro%2C+Maring%C3%A1+-+PR%2C+87020-025!5e0!3m2!1spt-BR!2sbr!4v1"
-                    width="100%" height="380" style="border:0;display:block;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Localização MV Gestão Web — Av. Duque de Caxias, 882, Centro, Maringá PR"></iframe>
             </div>
         </section>
 
@@ -1083,6 +1184,31 @@
         <!-- JS — defer, sem bloqueio de renderização -->
         <script src="/assets/js/main.js" defer></script>
 
+        <!-- Script Formulário de Contato Web3Forms -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const form = document.querySelector('form[action*="web3forms"]');
+                const success = document.getElementById('form-success');
+                if (form) {
+                    form.addEventListener('submit', async function (e) {
+                        e.preventDefault();
+                        const data = new FormData(form);
+                        try {
+                            const res = await fetch(form.action, { method: 'POST', body: data });
+                            const json = await res.json();
+                            if (json.success) {
+                                form.style.display = 'none';
+                                success.style.display = 'block';
+                            } else {
+                                alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");
+                            }
+                        } catch (err) {
+                            alert("Erro de conexão. Verifique sua internet e tente novamente.");
+                        }
+                    });
+                }
+            });
+        </script>
 </body>
 
 </html>
