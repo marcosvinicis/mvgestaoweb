@@ -947,65 +947,70 @@ section {
     background: var(--color-surface);
 }
 
-.testimonials-grid {
+.depoimentos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: var(--space-6);
+    margin-top: var(--space-12);
 }
 
-.testimonial-card {
-    background: #fff;
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.depoimento-card {
+    background: var(--color-surface-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    position: relative;
+    transition: box-shadow var(--transition-base);
 }
 
-.testimonial-header {
+.depoimento-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.depoimento-card::before {
+    content: '\201C';
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-6);
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--color-accent-light);
+    font-weight: var(--font-extrabold);
+}
+
+.depoimento-text {
+    font-size: var(--text-base);
+    color: var(--color-text-body);
+    line-height: 1.75;
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-6);
+}
+
+.depoimento-cliente {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
 }
 
-.testimonial-photo {
-    width: 64px;
-    height: 64px;
+.depoimento-foto {
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
 }
 
-.testimonial-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+.depoimento-autor {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--color-accent);
+}
+
+.depoimento-cargo {
     font-size: 13px;
-    color: #6B7280;
-}
-
-.testimonial-info strong {
-    font-size: 15px;
-    color: #111827;
-}
-
-.testimonial-stars {
-    color: #F59E0B;
-    font-size: 16px;
-}
-
-.testimonial-card p {
-    font-size: 14px;
-    color: #374151;
-    line-height: 1.6;
-    font-style: italic;
-}
-
-@media (max-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
+    color: var(--color-text-muted);
+    line-height: 1.4;
+    margin-top: 2px;
 }
 
 .credenciais-grid {
@@ -1921,6 +1926,10 @@ section {
     }
 
 
+    .depoimentos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .servicos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1972,6 +1981,10 @@ section {
 
     .hero h1 {
         font-size: var(--text-5xl);
+    }
+
+    .depoimentos-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .servicos-grid {
