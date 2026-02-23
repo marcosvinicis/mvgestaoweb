@@ -954,61 +954,61 @@ section {
 }
 
 .depoimento-card {
-    background: var(--color-surface-alt);
-    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-xl);
     padding: var(--space-8);
     position: relative;
-    transition: box-shadow var(--transition-base);
+    transition: box-shadow var(--transition-base), transform var(--transition-base);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .depoimento-card:hover {
     box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
 }
 
-.depoimento-card::before {
-    content: '\201C';
-    position: absolute;
-    top: var(--space-4);
-    left: var(--space-6);
-    font-size: 4rem;
-    line-height: 1;
+.depoimento-stars {
     color: var(--color-accent-light);
-    font-weight: var(--font-extrabold);
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+    margin-bottom: var(--space-4);
 }
 
 .depoimento-text {
     font-size: var(--text-base);
-    color: var(--color-text-body);
+    color: var(--color-contrast);
     line-height: 1.75;
-    margin-top: var(--space-8);
-    margin-bottom: var(--space-6);
 }
 
 .depoimento-cliente {
     display: flex;
     align-items: center;
     gap: var(--space-4);
-    margin-top: var(--space-6);
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .depoimento-foto {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    border: 2px solid var(--color-accent);
 }
 
 .depoimento-autor {
-    font-size: var(--text-sm);
+    font-size: 15px;
     font-weight: var(--font-semibold);
-    color: var(--color-accent);
+    color: var(--color-contrast);
 }
 
 .depoimento-cargo {
     font-size: 13px;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.6);
     line-height: 1.4;
     margin-top: 2px;
 }
