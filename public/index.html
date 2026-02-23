@@ -949,13 +949,43 @@
                                         placeholder="(xx) xxxxx-xxxx">
                                 </div>
 
-                                <div class="mv-form-group full-width">
+                                <div class="mv-form-group">
                                     <label for="email">E-mail <span class="required-asterisk">*</span></label>
                                     <input type="email" id="email" name="email" required placeholder="seu@email.com">
                                 </div>
 
+                                <div class="mv-form-group">
+                                    <label for="cidade">Cidade / Estado <span class="required-asterisk">*</span></label>
+                                    <input type="text" id="cidade" name="cidade" required placeholder="Maringá, PR">
+                                </div>
+
+                                <div class="mv-form-group">
+                                    <label for="trafego">Já investe em tráfego pago? <span
+                                            class="required-asterisk">*</span></label>
+                                    <select id="trafego" name="trafego" required>
+                                        <option value="" disabled selected>Selecione...</option>
+                                        <option value="Não invisto">Não invisto</option>
+                                        <option value="Até R$1.500/mês">Até R$1.500/mês</option>
+                                        <option value="R$1.500 a R$5.000/mês">R$1.500 a R$5.000/mês</option>
+                                        <option value="Acima de R$5.000/mês">Acima de R$5.000/mês</option>
+                                    </select>
+                                </div>
+
+                                <div class="mv-form-group">
+                                    <label for="como">Como nos encontrou? <span
+                                            class="required-asterisk">*</span></label>
+                                    <select id="como" name="como" required>
+                                        <option value="" disabled selected>Selecione...</option>
+                                        <option value="Google">Google</option>
+                                        <option value="Indicação">Indicação</option>
+                                        <option value="Instagram">Instagram</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+
                                 <div class="mv-form-group full-width">
-                                    <label for="desafio">Mensagem <span class="required-asterisk">*</span></label>
+                                    <label for="desafio">Mensagem / Desafio <span
+                                            class="required-asterisk">*</span></label>
                                     <textarea id="desafio" name="desafio" required rows="4"
                                         placeholder="Conte um pouco sobre seu projeto..."></textarea>
                                 </div>
